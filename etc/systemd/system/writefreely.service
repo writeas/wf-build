@@ -1,0 +1,16 @@
+[Unit]
+Description=Write Freely Instance
+After=syslog.target network.target
+
+[Service]
+Type=simple
+User=writefreely
+Group=www-data
+StandardOutput=syslog
+StandardError=syslog
+WorkingDirectory=/var/www/html
+ExecStart=/var/www/html/writefreely
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

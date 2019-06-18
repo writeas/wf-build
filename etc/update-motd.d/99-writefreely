@@ -1,0 +1,14 @@
+Welcome to your writefreely instance!
+
+To view the applications logs type: journalctl -f -u writefreely
+
+Your database root password is in /var/www/html/.root.db.pass
+Your apllication database account is:
+	Username: writefreely
+	Password: /var/www/html/.user.db.pass
+
+For more information on administering a writefreely instance see:
+	https://writefreely.org/docs/latest/admin
+	https://github.com/writeas/writefreely
+
+If you need help: https://discuss.write.as is a great place to ask.
