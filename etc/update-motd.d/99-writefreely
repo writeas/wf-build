@@ -1,14 +1,16 @@
-Welcome to your writefreely instance!
+#! /bin/bash
 
-To view the applications logs type: journalctl -f -u writefreely
+printf "\nWelcome to your writefreely instance!\n"
 
-Your database root password is in /var/www/html/.root.db.pass
-Your apllication database account is:
-	Username: writefreely
-	Password: /var/www/html/.user.db.pass
+printf "\nTo view the applications logs type: journalctl -f -u writefreely\n"
 
-For more information on administering a writefreely instance see:
-	https://writefreely.org/docs/latest/admin
-	https://github.com/writeas/writefreely
+printf "\nYour database root password is in /var/www/html/.root.db.pass\n"
+printf "Your apllication database account is:\n"
+printf "  Username: writefreely\n"
+printf "  Password: /var/www/html/.user.db.pass\n"
 
-If you need help: https://discuss.write.as is a great place to ask.
+printf "\nFor more information on administering a writefreely instance see:\n"
+printf "  - https://writefreely.org/docs/latest/admin\n"
+printf "  - https://github.com/writeas/writefreely\n"
+
+printf "\nIf you need help: https://discuss.write.as is a great place to ask.\n"
