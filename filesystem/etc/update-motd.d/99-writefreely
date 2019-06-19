@@ -5,7 +5,7 @@ printf "\nWelcome to your writefreely instance!\n"
 printf "\nTo view the applications logs type: journalctl -f -u writefreely\n"
 
 printf "\nYour database root password is in /var/www/html/.root.db.pass\n"
-printf "Your apllication database account is:\n"
+printf "Your application database account is:\n"
 printf "  Username: writefreely\n"
 printf "  Password: /var/www/html/.user.db.pass\n"
 
