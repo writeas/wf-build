@@ -55,6 +55,9 @@ read -p "Again, press ${good}[ENTER]${norm} when ready to continue..."
 cd /var/www/html
 ./writefreely --config
 
+# generate encryption keys
+./writefreely --gen-keys
+
 printf "\n${bold}Done.${norm}\n"
 printf "\n${warn}${bold}Starting writefreely...${norm}\n"
 
