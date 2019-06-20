@@ -10,4 +10,4 @@ tempdir=`mktemp -d`
 wget -P $tempdir -q --show-progress $url
 
 # install to /var/www/html
-tar -zxvf $tempdir/writefreely_*_linux_amd64.tar.gz -C /var/www/html
+tar -zxvf $tempdir/writefreely_*_linux_amd64.tar.gz -C /var/www/writefreely

@@ -34,6 +34,6 @@ Both passwords are stored on disk under `/var/www/html/.root.db.pass` and `/var/
 
 It then sets the root password, creates a writefreely database and user with the generated password. Then updates the `/var/www/html/config.ini` with the correct credential.
 
-### /var/www/html
+### /var/www/writefreely
 
 **`config.ini`**: is a base writefreely configuration file with some placeholders for the scripts to manipulate before running `writefreely -config` on first run.

@@ -36,7 +36,7 @@ systemctl restart nginx
 printf "\n${good}${bold}Done.${norm}\n"
 
 # edit config.ini
-sed -i "s/host              = HOSTNAME/host              = https:\/\/$domain/g" /var/www/html/config.ini
+sed -i "s/host              = HOSTNAME/host              = https:\/\/$domain/g" /var/www/writefreely/config.ini
 
 # run certbot
 printf "\nNext we will set up certificates with Let's Encrypt\n"
@@ -52,7 +52,7 @@ printf "\t${warn}https://writefreely.org/docs/latest/admin/commands.md${norm}\n\
 read -p "Again, press ${good}[ENTER]${norm} when ready to continue..."
 
 # run writefreely config from dir
-cd /var/www/html
+cd /var/www/writefreely
 ./writefreely --config
 
 # generate encryption keys

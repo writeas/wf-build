@@ -8,8 +8,8 @@ User=writefreely
 Group=www-data
 StandardOutput=syslog
 StandardError=syslog
-WorkingDirectory=/var/www/html
-ExecStart=/var/www/html/writefreely
+WorkingDirectory=/var/www/writefreely
+ExecStart=/var/www/writefreely/writefreely
 Restart=always
 
 [Install]

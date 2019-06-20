@@ -29,7 +29,7 @@ server {
     }
 
     location ~ ^/(css|img|js|fonts)/ {
-        root /var/www/html/static;
+        root /var/www/writefreely/static;
         # Optionally cache these files in the browser:
         # expires 12M;
     }
