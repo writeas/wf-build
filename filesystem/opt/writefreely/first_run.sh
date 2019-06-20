@@ -22,6 +22,10 @@ printf "\n${warn}DNS changes can take a while to propagate, to check the status 
 printf "${warn}your domain name. ${norm}${dim}i.e. 'ping duckduckgo.com'${norm}\n"
 read -p "When you are ready, press ${good}[ENTER]${norm} to continue."
 
+# required for weird journald issue
+# no journal files are found until an initial restart of the service
+systemctl restart systemd-journald
+
 # get domain name
 printf "\nPlease enter the domain name that points at this instance.\n${dim}i.e. dev.write.as${norm}\n"
 read -p "https://" domain
@@ -60,6 +64,8 @@ cd /var/www/writefreely
 
 printf "\n${bold}Done.${norm}\n"
 printf "\n${warn}${bold}Starting writefreely...${norm}\n"
+
+chown -R writefreely:www-data /var/www/writefreely
 
 # enable and start writefreely
 systemctl enable writefreely.service
