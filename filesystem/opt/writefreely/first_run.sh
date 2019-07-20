@@ -47,9 +47,6 @@ printf "\nNext we will set up certificates with Let's Encrypt\n"
 certbot --nginx
 
 printf "\nNext you will be guided through the writefreely configuration.\n\n"
-printf "Choose ${good}'Production, behind reverse proxy'${norm}.\n"
-printf "Then use the defaults provided until you reach the 'App setup' section.\n"
-printf "Where you will enter in your own details where missing...\n"
 printf "\n\t${warn}Securely store your admin username and password.${norm}\n"
 printf "\t${warn}If you forget, follow the instructions here:${norm}\n"
 printf "\t${warn}https://writefreely.org/docs/latest/admin/commands.md${norm}\n\n"
@@ -57,7 +54,7 @@ read -p "Again, press ${good}[ENTER]${norm} when ready to continue..."
 
 # run writefreely config from dir
 cd /var/www/writefreely
-./writefreely --config
+./writefreely --config --sections "app"
 
 # generate encryption keys
 ./writefreely --gen-keys
