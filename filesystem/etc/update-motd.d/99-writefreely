@@ -12,5 +12,6 @@ printf "  Password: /var/www/writefreely/.user.db.pass\n"
 printf "\nFor more information on administering a writefreely instance see:\n"
 printf "  - https://writefreely.org/docs/latest/admin\n"
 printf "  - https://github.com/writeas/writefreely\n"
-
+printf "This installation includes basic fail2ban setup. To configure it further see:\n"
+printf "  - https://www.fail2ban.org/\n"
 printf "\nIf you need help: https://discuss.write.as is a great place to ask.\n\n"
