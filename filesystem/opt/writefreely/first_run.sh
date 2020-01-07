@@ -71,4 +71,8 @@ systemctl start writefreely.service
 printf "\n${good}${bold}Done.${norm}\n"
 printf "\n${bold}Visit https://$domain in a browser to log in.${norm}\n"
 
+# enable fail2ban now that setup is complete
+systemctl enable fail2ban.service
+systemctl start fail2ban.service
+
 cp -f /etc/skel/.bashrc /root/.bashrc
